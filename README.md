@@ -40,7 +40,7 @@ The user can delete a todo with the 'Delete' button. It disappears instantly.
 
 ---
 
-## API Setup
+## API Diagram
 ![A diagram showing the way the front and back ends of the API interact with each other](/docs/readme_img_3.png)
 
 ## Setup
