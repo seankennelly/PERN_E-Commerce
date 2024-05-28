@@ -1,4 +1,0 @@
-Differences between video and my project:
-- My server.js file was called index.js in video
-- My structure has separation of interests between routes, controllers and queries. Model View Controller pattern used (different files and folders used for each).
-- "window.location = "/" removed from InputTodo.js, as it reloads page. Instead I used setDescription("") to reset value. Video 50:51

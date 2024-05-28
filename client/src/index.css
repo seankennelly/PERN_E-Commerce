@@ -16,7 +16,3 @@ input.form-control {
   font-style: italic;
   opacity: 0.75;
 }
-
-input.add-todo {
-  color: red;
-}
