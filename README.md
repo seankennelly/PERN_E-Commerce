@@ -10,6 +10,7 @@
   - [Back End](#back-end)
   - [Front End](#front-end)
 - [API Diagram](#api-diagram)
+- [Routes](#routes)
 - [Swagger](#swagger)
 - [Setup](#setup)
 
@@ -56,6 +57,16 @@ The user can delete a todo with the 'Delete' button. It disappears instantly.
 
 ## API Diagram
 ![A diagram showing the way the front and back ends of the API interact with each other](/docs/readme_img_3.png)
+
+## Routes
+
+| Route | Method    | Description    |
+| :-----: | :---: | :---: |
+| /todos | POST   | Add a new todo   |
+| /todos | GET   | Get all todos   |
+| /todos/:todo_id | PUT   | Update todo by ID  |
+| /todos/:todo_id | DELETE   | Delete todo by ID   |
+
 
 ## Swagger
 You can access Swagger documentation for the API by going to `http://localhost:5000/api-docs/`.
