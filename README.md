@@ -1,17 +1,17 @@
-# PERN To Do App
+# PERN To Do App <!-- omit from toc -->
 ![A screenshot of my app](/docs/readme_img_1.png)
-- [PERN To Do App](#pern-to-do-app)
-  - [Key Features](#key-features)
-    - [Add a Todo](#add-a-todo)
-    - [View Todos](#view-todos)
-    - [Edit Todos](#edit-todos)
-    - [Delete Todos](#delete-todos)
-  - [Technologies](#technologies)
-    - [Back End](#back-end)
-    - [Front End](#front-end)
-  - [API Diagram](#api-diagram)
-  - [Swagger](#swagger)
-  - [Setup](#setup)
+
+- [Key Features](#key-features)
+  - [Add a Todo](#add-a-todo)
+  - [View Todos](#view-todos)
+  - [Edit Todos](#edit-todos)
+  - [Delete Todos](#delete-todos)
+- [Technologies](#technologies)
+  - [Back End](#back-end)
+  - [Front End](#front-end)
+- [API Diagram](#api-diagram)
+- [Swagger](#swagger)
+- [Setup](#setup)
 
 ---
 
