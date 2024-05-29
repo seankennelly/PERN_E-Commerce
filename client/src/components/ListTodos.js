@@ -25,7 +25,7 @@ const ListTodos = () => {
 
   const deleteTodo = async (todoId) => {
     try {
-      const deleteTodo = await fetch(
+      /*const deleteTodo = */await fetch(
         // `http://localhost:5000/todos/${todoId}`, <-------- ORIGINAL
         `${backendURL}/${todoId}`, /** NEW */
         {

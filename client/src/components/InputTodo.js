@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // Remove this if it doesn't work
 const backendURL = "https://pern-todo-app-backend.onrender.com";
 
