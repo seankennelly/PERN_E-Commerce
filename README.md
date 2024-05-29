@@ -71,7 +71,7 @@ The user can delete a todo with the 'Delete' button. It disappears instantly.
 ## Swagger
 You can access Swagger documentation for the API by going to `http://localhost:5000/api-docs/`.
 
-![A screenshot of the Swagger documentation that accompanies this API](/docs/readme_img_4.png)
+![A screenshot of the Swagger documentation that accompanies this API](/docs/readme_img_4.2.png.png)
 
 ## Setup
 
