@@ -2,6 +2,13 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
+// SWAGGER
+const swaggerUI = require("swagger-ui-express");
+const swaggerJsDoc = require("swagger-jsdoc");
+const swaggerOptions = require('./Swagger/swaggerOptions');
+const swaggerSpec = swaggerJsDoc(swaggerOptions);
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+
 
 // MIDDLEWARE
 app.use(cors());
@@ -14,4 +21,5 @@ app.use('/todos', todoRouter);
 const port = 5000;
 app.listen(port, () => {
   console.log(`App listening on port ${port}`)
-})
+});
+   

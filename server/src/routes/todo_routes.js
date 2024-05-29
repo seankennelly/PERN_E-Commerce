@@ -1,6 +1,5 @@
 const express = require('express');
 const { Router } = require('express');
-// const pool = require('../db/db');
 const controller = require('../controllers/todo_controller');
 
 const router = Router();

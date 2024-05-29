@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+
 // COMPONENTS
 import InputTodo from './components/InputTodo';
 import ListTodos from './components/ListTodos';

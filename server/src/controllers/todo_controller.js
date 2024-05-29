@@ -45,7 +45,7 @@ const deleteTodoById = async (req, res) => {
   try {
     const todoId = parseInt(req.params.todoId);
     await pool.query(queries.deleteTodoById, [todoId]);
-    res.json('Todo removed');
+    res.status(204).send('Todo removed');
   } catch (error) {
     console.error(error.message);
   }

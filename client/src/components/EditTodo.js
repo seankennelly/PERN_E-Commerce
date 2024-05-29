@@ -21,7 +21,7 @@ const EditTodo = ({ todo }) => {
       console.error(error.message);
     }
   };
-  
+
   return (
     <>
       <button
