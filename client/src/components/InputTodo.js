@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // Remove this if it doesn't work
+// eslint-disable-next-line
 const backendURL = "https://pern-todo-app-backend.onrender.com";
 
 const InputTodo = () => {
