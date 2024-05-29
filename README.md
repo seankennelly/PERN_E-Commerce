@@ -32,6 +32,7 @@ The user can delete a todo with the 'Delete' button. It disappears instantly.
 - Node.js
 - Express.js
 - Nodemon
+- Swagger
 
 ### Front End
 
@@ -42,6 +43,11 @@ The user can delete a todo with the 'Delete' button. It disappears instantly.
 
 ## API Diagram
 ![A diagram showing the way the front and back ends of the API interact with each other](/docs/readme_img_3.png)
+
+## Swagger
+You can access Swagger documentation for the API by going to `http://localhost:5000/api-docs/`.
+
+![A screenshot of the Swagger documentation that accompanies this API](/docs/readme_img_4.png)
 
 ## Setup
 
