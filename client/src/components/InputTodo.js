@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+// Remove this if it doesn't work
+const backendURL = "https://pern-todo-app-backend.onrender.com";
 
 const InputTodo = () => {
   const [description, setDescription] = useState("Add new to-do");
@@ -7,7 +9,10 @@ const InputTodo = () => {
     e.preventDefault();
     try {
       const body = { description };
-      const response = await fetch("http://localhost:5000/todos", {
+      const response = await fetch(
+        // "http://localhost:5000/todos", <---- ORIGINAL 
+        "https://pern-todo-app-backend.onrender.com", /* NEW, remove if broken */
+        {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

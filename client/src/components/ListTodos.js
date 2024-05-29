@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
 import EditTodo from "./EditTodo";
+// Remove this if it doesn't work
+const backendURL = "https://pern-todo-app-backend.onrender.com";
 
 const ListTodos = () => {
   const [todos, setTodos] = useState([]);
 
   const getTodos = async () => {
     try {
-      const response = await fetch("http://localhost:5000/todos");
+      const response = await fetch(
+        // "http://localhost:5000/todos" <------ ORIGINAL
+      "https://pern-todo-app-backend.onrender.com" /** NEW */
+      );
       const jsonData = await response.json();
       setTodos(jsonData);
     } catch (error) {
@@ -20,7 +25,10 @@ const ListTodos = () => {
 
   const deleteTodo = async (todoId) => {
     try {
-      const deleteTodo = await fetch(`http://localhost:5000/todos/${todoId}`, {
+      const deleteTodo = await fetch(
+        // `http://localhost:5000/todos/${todoId}`, <-------- ORIGINAL
+        `${backendURL}/${todoId}`, /** NEW */
+        {
         method: "DELETE",
       });
       setTodos(todos.filter(todo => todo.todo_id !== todoId));
