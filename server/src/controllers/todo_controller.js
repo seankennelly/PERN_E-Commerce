@@ -1,6 +1,7 @@
 const pool = require('../db/db');
 const queries = require('../db/db_queries');
 
+
 const addNewTodo = async (req, res) => {
   try {
     const { description } = req.body;
@@ -56,5 +57,5 @@ module.exports = {
   getAllTodos,
   getTodoById,
   updateTodoById,
-  deleteTodoById
+  deleteTodoById,
 };

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import EditTodo from "./EditTodo";
 // Remove this if it doesn't work
-// const backendURL = "https://pern-todo-app-backend.onrender.com";
-const backendURL = "http://localhost:5000/todos";
+const backendURL = "https://pern-todo-app-backend.onrender.com/todos";
+// const backendURL = "http://localhost:5000/todos";
 
 const ListTodos = () => {
   const [todos, setTodos] = useState([]);
