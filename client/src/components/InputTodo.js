@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// Remove this if it doesn't work
-// eslint-disable-next-line
-const backendURL = "https://pern-todo-app-backend.onrender.com";
+
+// const backendURL = "https://pern-todo-app-backend.onrender.com";
+const backendURL = "http://localhost:5000/todos";
 
 const InputTodo = () => {
   const [description, setDescription] = useState("Add new to-do");
@@ -10,10 +10,7 @@ const InputTodo = () => {
     e.preventDefault();
     try {
       const body = { description };
-      const response = await fetch(
-        // "http://localhost:5000/todos", <---- ORIGINAL 
-        "https://pern-todo-app-backend.onrender.com", /* NEW, remove if broken */
-        {
+      const response = await fetch(`${backendURL}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

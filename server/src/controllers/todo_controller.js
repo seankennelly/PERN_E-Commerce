@@ -4,7 +4,7 @@ const queries = require('../db/db_queries');
 const addNewTodo = async (req, res) => {
   try {
     const { description } = req.body;
-    const newTodo = await pool.query(queries.addNewTodo, [description]);
+    await pool.query(queries.addNewTodo, [description]);
     res.status(201).send('New todo added');
   } catch (error) {
     console.error(error.message);

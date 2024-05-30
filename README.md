@@ -77,9 +77,10 @@ You can access Swagger documentation for the API by going to `http://localhost:5
 
 1. Clone/download copy of this repository
 2. Using the command line, navigate to the `/server` subdirectory and run `npm install` to install package dependencies found in the `package-lock.json` file
-3. Create a PostgreSQL database using the `database.sql` file in `/server/src/db`
-4. Update database settings if neccessary in `/server/src/db.js`
-5. In the command line, run `node server.js` or `./node_modules/.bin/nomon server.js` to make use of Nodemon
-6. In command line, navigate to `/client` subdirectory and run `npm install` to install package dependencies found in the `package-lock.json` file
-7. Run `npm start` to start the React app
-8. The application should launch in your browser, and can be accessed at `http://localhost:3000`
+3. Create a PostgreSQL database using the commands in `database.sql` file in `/server/src/db`
+4. Create a `.env` file based on the `.env-example` file
+5. Update database settings if neccessary in `/server/src/db.js`
+6. In the command line, run `node server.js` or `./node_modules/.bin/nomon server.js` to make use of Nodemon
+7. In command line, navigate to `/client` subdirectory and run `npm install` to install package dependencies found in the `package-lock.json` file
+8. Run `npm start` to start the React app
+9. The application should launch in your browser, and can be accessed at `http://localhost:3000`

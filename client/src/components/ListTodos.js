@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import EditTodo from "./EditTodo";
 // Remove this if it doesn't work
-const backendURL = "https://pern-todo-app-backend.onrender.com";
+// const backendURL = "https://pern-todo-app-backend.onrender.com";
+const backendURL = "http://localhost:5000/todos";
 
 const ListTodos = () => {
   const [todos, setTodos] = useState([]);
 
   const getTodos = async () => {
     try {
-      const response = await fetch(
-        // "http://localhost:5000/todos" <------ ORIGINAL
-      "https://pern-todo-app-backend.onrender.com" /** NEW */
-      );
+      const response = await fetch(`${backendURL}`);
       const jsonData = await response.json();
       setTodos(jsonData);
     } catch (error) {
@@ -25,13 +23,10 @@ const ListTodos = () => {
 
   const deleteTodo = async (todoId) => {
     try {
-      /*const deleteTodo = */await fetch(
-        // `http://localhost:5000/todos/${todoId}`, <-------- ORIGINAL
-        `${backendURL}/${todoId}`, /** NEW */
-        {
+      await fetch(`${backendURL}/${todoId}`, {
         method: "DELETE",
       });
-      setTodos(todos.filter(todo => todo.todo_id !== todoId));
+      setTodos(todos.filter((todo) => todo.todo_id !== todoId));
     } catch (error) {
       console.error(error.message);
     }
@@ -51,7 +46,9 @@ const ListTodos = () => {
           {todos.map((todo) => (
             <tr key={todo.todo_id}>
               <td>{todo.description}</td>
-              <td><EditTodo todo={todo}/></td>
+              <td>
+                <EditTodo todo={todo} />
+              </td>
               <td>
                 <button
                   className="btn btn-danger"
