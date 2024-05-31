@@ -61,8 +61,6 @@ Each todo has an edit button that brings up a Bootstrap modal component. The use
 
 The user can delete a todo with the 'Delete' button. It disappears instantly.
 
----
-
 ## Technologies
 
 ### Back End
@@ -78,7 +76,6 @@ The user can delete a todo with the 'Delete' button. It disappears instantly.
 - React v18
 - Bootstrap
 
----
 
 ## API Diagram
 ![A diagram showing the way the front and back ends of the API interact with each other](/docs/readme_img_3.png)
@@ -101,8 +98,9 @@ Due to the simplicity of my database and its single table I have not included a 
 
 
 ## Testing
-Database and server testing was done with Postbird. API routes were tested with Postman.
-You can access Swagger documentation for the API by going to `http://localhost:5000/api-docs/`.
+- Database and server testing was done with Postbird
+- API routes were tested with Postman
+- You can access Swagger documentation for the API by going to `http://localhost:5000/api-docs/`.
 
 ![A screenshot of the Swagger documentation that accompanies this API](/docs/readme_img_4.2.png)
 
