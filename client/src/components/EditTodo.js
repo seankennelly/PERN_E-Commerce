@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-const backendURL = "https://pern-todo-app-backend.onrender.com/todos";
-// const backendURL = "http://localhost:5000/todos";
+// Alternating variables for backend requests, depending on Render or production environment:
+// const backendURL = "https://pern-todo-app-backend.onrender.com/todos";
+const backendURL = "http://localhost:5000/todos";
 
 const EditTodo = ({ todo }) => {
   const [description, setDescription] = useState(todo.description);

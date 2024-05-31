@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import EditTodo from "./EditTodo";
-// Remove this if it doesn't work
+
+// Alternating variables for backend requests, depending on Render or production environment:
 const backendURL = "https://pern-todo-app-backend.onrender.com/todos";
 // const backendURL = "http://localhost:5000/todos";
 
