@@ -7,15 +7,15 @@ Please note that as this app is deployed on Render's free tier, the database con
 ![A screenshot of my app](/docs/readme_img_1.png)
 
 - [Learning Outcomes](#learning-outcomes)
+- [Technologies](#technologies)
+  - [Back End](#back-end)
+  - [Front End](#front-end)
 - [Deployment](#deployment)
 - [Key Features](#key-features)
   - [Add a Todo](#add-a-todo)
   - [View Todos](#view-todos)
   - [Edit Todos](#edit-todos)
   - [Delete Todos](#delete-todos)
-- [Technologies](#technologies)
-  - [Back End](#back-end)
-  - [Front End](#front-end)
 - [API Diagram](#api-diagram)
 - [Routes](#routes)
 - [Database](#database)
@@ -31,6 +31,21 @@ The purpose of this app was the practical application of recent learning. It gav
 - To build my first full stack application using the PERN stack
 - To implement Swagger documentation
 - To successfully deploy my first full stack application
+
+## Technologies
+
+### Back End
+
+- PostgreSQL
+- Node.js
+- Express.js
+- Nodemon
+- Swagger
+
+### Front End
+
+- React v18
+- Bootstrap
 
 ## Deployment
 
@@ -60,22 +75,6 @@ Each todo has an edit button that brings up a Bootstrap modal component. The use
 ### Delete Todos
 
 The user can delete a todo with the 'Delete' button. It disappears instantly.
-
-## Technologies
-
-### Back End
-
-- PostgreSQL
-- Node.js
-- Express.js
-- Nodemon
-- Swagger
-
-### Front End
-
-- React v18
-- Bootstrap
-
 
 ## API Diagram
 ![A diagram showing the way the front and back ends of the API interact with each other](/docs/readme_img_3.png)
